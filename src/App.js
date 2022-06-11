@@ -65,6 +65,7 @@ function App() {
     setAge(users.age);
   };
 
+  // submit update after edit
   const submitChange = () => {
     update(ref(db, `/users/${tempUsers}`), {
       name: name,
